@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.nav {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.navigation {
+  position: fixed;
+}
+.post-top {
+  margin-top: 8rem;
+
+}
+.post {
+  width: 55%;
+  margin-right: 1rem;
+} 
+.icon {
+  font-size: 30px;
+}
+.fa-home, .fa-user-friends, .fa-user {
+  color: #000;
+}
+.form-inline input {
+    border-radius: 2rem;
+}
+.logo-p {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 3px solid rgb(112, 131, 192);
+  padding: 1px;
+}
+::selection{
+  color: #fff;
+}
+
+.body-card img{
+  cursor: pointer;
+}
+.body-card .post{
+  transition: margin-left 0.18s ease;
+}
+.post form{
+  padding: 10px 30px 30px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 5px;
+}
+.post form .content,
+.audience .list li .column{
+  display: flex;
+  align-items: center;
+}
+.post form .content img{
+  cursor: default;
+}
+
+form :where(textarea, button){
+  width: 100%;
+  outline: none;
+  border: none;
+}
+form textarea{
+  resize: none;
+  font-size: 18px;
+  margin-top: 30px;
+  min-height: 100px;
+}
+form textarea::placeholder{
+  color: #858585;
+}
+form textarea:focus::placeholder{
+  color: #b3b3b3;
+}
+form .options{
+  text-align: center;
+  margin: 15px 0;
+  padding: 0 15px;
+  border-radius: 7px;
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form .options p{
+  color: #595959;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+}
+form .options .list{
+  list-style: none;
+}
+.options .list{
+  height: 42px;
+  width: 42px;
+  margin: 0 -1px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.options:hover{
+  background: #f0f1f4;
+}
+
+form button{
+  height: 53px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #BCC0C4;
+  cursor: no-drop;
+  border-radius: 7px;
+  background: #e2e5e9;
+  transition: all 0.3s ease;
+}
+form textarea:valid ~ button{
+  color: #fff;
+  cursor: pointer;
+  background: #4599FF;
+}
+form textarea:valid ~ button:hover{
+  background: #1a81ff;
+}
+.container .audience{
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+.body-card .active .audience{
+  opacity: 1;
+}
+/* -------------------------card-body------------------------- */
+.container .post {
+  width: 74%;
+  margin-top: 1rem;
+  margin-bottom: -50px;
+}
+.picture_post {
+  width: 100%;
+}
+.icons_reach {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #B9B9B9;
+  width: 100%;
+  font-size: 50px;
+}
