@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 .nav {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
@@ -14,8 +15,7 @@
   position: fixed;
 }
 .post-top {
-  margin-top: 8rem;
-
+  margin-top: 7rem;
 }
 .post {
   width: 55%;
@@ -79,14 +79,6 @@ form textarea::placeholder{
 form textarea:focus::placeholder{
   color: #b3b3b3;
 }
-form .options{
-  text-align: center;
-  margin: 15px 0;
-  padding: 0 15px;
-  border-radius: 7px;
-  border: 1px solid #B9B9B9;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
 
 form .options p{
   color: #595959;
@@ -138,7 +130,6 @@ form textarea:valid ~ button:hover{
 /* -------------------------card-body------------------------- */
 .container .post {
   width: 74%;
-  margin-top: 1rem;
   margin-bottom: -50px;
 }
 .picture_post {
@@ -150,4 +141,32 @@ form textarea:valid ~ button:hover{
   border: 1px solid #B9B9B9;
   width: 100%;
   font-size: 50px;
+}
+
+.container {
+  margin-top: 4rem;
+}
+.file_upload{
+  width: 80%;
+  height: 20vh;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #f0efef;
+}
+input[type="file"]{
+  padding: 10px;
+  color: red;
+  display: none;
+  background-color: #ffff;
+}
+label{
+
+  font-weight: bold;
 }

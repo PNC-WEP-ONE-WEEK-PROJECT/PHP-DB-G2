@@ -4,7 +4,7 @@ require_once "templates/header.php";
 <!-- ---------------------------body-card------------------------------------ -->
 <div class="body-card d-flex justify-content-center">
   <section class="post post-top">
-    <form action="#">
+    <form action="controllers/create_controller.php" method="post" enctype="multipart/form-data">
       <div class="content">
         <img src="images/image1.png"class="logo-p">
         <div class="details ml-2">
@@ -16,13 +16,16 @@ require_once "templates/header.php";
           </div>
         </div>
       </div>
-      <textarea placeholder="What's on your mind?" spellcheck="false" required></textarea>
-      <!-- --------------icons--------------------------------------------->
-      <div class="options display-2">
-        <img src="images/gallery.png" width="9%">
-        <p>Add to Your Post</p>
+      <textarea placeholder="What's on your mind?" spellcheck="false" name="item" required></textarea>
+      <!-- --------------icons---------------------------------------------> 
+      <div class="file_upload">
+        <label for="fill_text" class="fill_text">
+          <div class="upload"><img src="/images/gallery.png" alt=""></div><br>
+          <h4>ULOAD PHOTOS</h4>
+        </label>
+        <input type="file" name="uploadfile" id="fill_text">
       </div>
-      <button class="form-control"><a href=""></a>Post</button>
+      <button type="submit" class="form-control" name="submit">Post</button>
     </form>
   </section>
 </div>
