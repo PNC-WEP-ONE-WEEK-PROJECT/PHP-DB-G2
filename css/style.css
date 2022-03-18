@@ -12,7 +12,8 @@
 
 }
 .navigation {
-  position: fixed;
+  position: sticky;
+  top: 0;
 }
 .post-top {
   margin-top: 7rem;
@@ -146,6 +147,7 @@ form textarea:valid ~ button:hover{
 .container {
   margin-top: 4rem;
 }
+/* Upload file---------------------------------- -----*/
 .file_upload{
   width: 80%;
   height: 20vh;
@@ -167,6 +169,80 @@ input[type="file"]{
   background-color: #ffff;
 }
 label{
+  font-weight: bold;
+}
 
+/* Update the post------------------------------ */
+.for-delete{
+  width: 100%;
+  position:absolute;
+  left: 699px;
+}
+
+.for-delete label{
+  font-size: 3rem;
+  position: absolute;
+ left:400px;
+ top: -70px;
+}
+
+.for-delete label:valid{
+  display: block;
+}
+#form-d{
+  width: 16%;
+  padding: 20px;
+  background: #ececec;
+  z-index: 888;
+  position: absolute;
+  left: 90px;
+  border-radius: 15px;
+  opacity: 0.6;
+}
+#form-d a{
+  color: #000;
+  width: 100%;
+  height: 5px;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+#form-d a .fa,.far,.fas{
+  margin:10px;
+  position: sticky;
+}
+/* Edit the post---------------- --------*/
+.edit img{
+  width:600px;
+  height: 400px;
+  margin: 0 1rem;
+  opacity: 0.6;
+}
+.editer {
+  background: none;
+  border: none;
+  width: 80%;
+  height: 40vh;
+  margin: auto;
+  margin-top: 0;
+}
+.form-control, .btn-edit{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+.edit-up{
+  width: 15%;
+  background: rgb(225, 225, 226);
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  z-index: 999;
+  left: 700px;
+  opacity: 0.6;
+}
+.edit-up h4{
   font-weight: bold;
 }

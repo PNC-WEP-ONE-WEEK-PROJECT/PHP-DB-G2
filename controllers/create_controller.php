@@ -1,6 +1,6 @@
 <?php
 require_once('../models/post.php');
-$item = $_POST['item'];
+$item = $_POST['texts'];
 $filename = $_FILES["uploadfile"]["name"];
 $tempname = $_FILES["uploadfile"]["tmp_name"];    
 $folder = "uploads/".$filename;
