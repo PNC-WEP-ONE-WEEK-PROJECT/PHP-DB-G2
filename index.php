@@ -22,7 +22,7 @@ require_once "templates/header.php";
               <div class="file_upload">
                   <label for="fill_text" class="fill_text">
                         <div class="upload"><img src="/images/gallery.png" alt=""></div><br>
-                        <h4>ULOAD PHOTOS</h4>
+                        <h4>UPLOAD PHOTOS</h4>
                   </label>
                   <input type="file" name="uploadfile" id="fill_text">
               </div>
