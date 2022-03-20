@@ -69,3 +69,71 @@ function updatText($id,$written_text)
         ':written_text' => $written_text,
     ]);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------Post Profile---------------------------------
+function get_user()
+{
+    global $db;
+    $statement = $db->query("SELECT user_id, surname, file_image FROM user_profiles") ;
+    $users = $statement->fetchAll();
+    return $users;
+
+}
+
+function createFriends($surname, $file_image)
+{   
+    $target = "../images/upload_profile/" .$_FILES['file_name']['name'];
+    move_uploaded_file($_FILES['file_name']['tmp_name'],$target);
+    global $db;
+    $statement = $db->prepare("INSERT INTO user_profiles (surname, file_image) VALUES(:surname, :file_image);");
+    $statement->execute([
+        ':surname'=>$surname,
+        ':file_image' =>$file_image,
+    ]);
+    return ($statement->rowCount() == 1);
+}

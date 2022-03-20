@@ -23,10 +23,10 @@
             </div>
         </div>
         <div class="icon">
-            <a href="#"><li class="fa fa-user"></li></a>
+            <a href="../profile.php"><li class="fa fa-user"></li></a>
         </div>
         <div class="icon">
-            <a href="#"><li class="fas fa-user-friends"></li></a>
+            <a href="../views/add_friends.php"><li class="fas fa-user-friends"></li></a>
         </div>
         <div class="login">
             <a href="../logout.php" class="btn btn-primary mr-5">Logout</a>

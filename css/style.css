@@ -9,11 +9,12 @@
 
 .nav {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
 }
 .navigation {
   position: sticky;
   top: 0;
+  z-index: 10;
+
 }
 .post-top {
   margin-top: 7rem;
@@ -282,4 +283,55 @@ label{
 .bg-white {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
+}
+
+
+
+
+/* ---------------------------------account--------------------------------------- */
+.bg_img {
+  height: 60vh;
+  width: 100%;
+  position: sticky;
+  border-radius: 10px;
+}
+.account .fill_text {
+  position: absolute;
+  margin-bottom: -20rem;
+}
+
+.account p {
+  margin-left: 11rem;
+  font-size: 1.5rem;
+}
+
+/* ------------------------profile-------------------------- */
+.text_name textarea {
+  display: flex;
+  text-align: center;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo_account {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+.fa-camera {
+  font-size: 2.5rem;
+  margin-left: 6rem;
+  /* margin-top: 1rem; */
+}
+.card-body {
+  background: #4599FF;
+  border-radius: 5px;
+}
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
