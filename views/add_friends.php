@@ -7,7 +7,7 @@ require_once("../templates/header.php");
     <form action="../controllers/create_profile.php" method="post" enctype="multipart/form-data">
       <div class="d-flex justify-content-between">
         <h2 class="h2">Add Friends</h2>
-        <a href="../home_page.php"><li class="fa fa-remove icon mt-2"></li></a>
+        <a href="../profile.php"><li class="fa fa-remove icon mt-2"></li></a>
       </div><hr>
       <div class="contents d-flex justify-content-center mt-4" >
         <label for="fill_text" class="fill_text">

@@ -5,6 +5,7 @@ require_once "../templates/header.php";
 <div class="body-card d-flex justify-content-center">
     <section class="post post-top">
         <form action="../controllers/create_controller.php" method="post" enctype="multipart/form-data">
+            <a href="../home_page.php"><li class="fa fa-remove icon mt-2"></li></a>
             <div class="content">
                 <img src="../images/image1.png"class="logo-p">
                 <div class="details ml-2">
