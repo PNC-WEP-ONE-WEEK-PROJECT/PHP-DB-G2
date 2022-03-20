@@ -6,4 +6,4 @@ $tempname = $_FILES["uploadfile"]["tmp_name"];
 $folder = "uploads/".$filename;
 $file_name = $folder;
 createPost(1, $item, $file_name);
-header('location: ../views/post_view.php');
+header('location: ../home_page.php');

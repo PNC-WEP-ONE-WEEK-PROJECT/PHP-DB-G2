@@ -19,17 +19,17 @@
                 <input class="form-control ml-2" type="search" placeholder="Search">
             </form>
             <div class="icon ml-5 mt-2">
-                <a href="../views/post_view.php"><li class="fa fa-home"></li></a>
+                <a href="../home_page.php"><li class="fa fa-home"></li></a>
             </div>
         </div>
         <div class="icon">
-            <a href="../index.php"><li class="fa fa-user"></li></a>
+            <a href="#"><li class="fa fa-user"></li></a>
         </div>
         <div class="icon">
-            <a href=""><li class="fas fa-user-friends"></li></a>
+            <a href="#"><li class="fas fa-user-friends"></li></a>
         </div>
         <div class="login">
-            <button class="btn btn-primary mr-5"><a href=""></a>Login</button>
+            <a href="../logout.php" class="btn btn-primary mr-5">Logout</a>
         </div>
     </nav>
     </div>
