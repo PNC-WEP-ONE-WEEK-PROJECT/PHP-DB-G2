@@ -14,11 +14,11 @@ if(isset($_POST['login']))
     {  
         require_once ("../home_page.php") ;
   
-        $_SESSION['email']=$email_address;//here session is used and value of $user_email store in $_SESSION.  
-  
+        $_SESSION['email']=$email_address;//here session is used and value of $user_email store in $_SESSION. 
+        $_SESSION['pass'] = $password; 
     }  
     else  
-    {   
+    {  
       require_once ("../login.php");
       header("Refresh:1.2; ../login.php");
     }  

@@ -13,11 +13,23 @@ session_start();//session starts here
                 <form role="form" action="/views/login.php" method="post">  
                     <fieldset>
                         <div class="form-group">
-                    
+                            <?php 
+                                if(isset($_POST['login'])) { 
+                                    if($_POST['email']) {
+                                        echo "<div class='alert alert-danger' role='alert'>Email incorrect!</div>";
+                                    }
+                                }
+                            ?>
                             <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus required>
                         </div>
                         <div class="form-group">
-                         
+                            <?php 
+                                if(isset($_POST['login'])) { 
+                                    if($_POST['pass']) {
+                                        echo "<div class='alert alert-danger' role='alert'>password incorrect!</div>";
+                                    }
+                                }
+                            ?>
                             <input class="form-control" placeholder="Password" name="pass" type="password" value="" required>  
                         </div>  
                         <input class="btn btn-lg btn-primary btn-block" type="submit" value="login" name="login" >  
