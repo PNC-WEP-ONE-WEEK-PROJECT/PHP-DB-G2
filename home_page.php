@@ -69,7 +69,7 @@ require_once ("models/comment.php");
                     <h5 id ="like" class="p-2 mt-2 rounded-3 w-25 text-center">
                         <span class="mx-1">LIKE</span>
                         <span><li class="fa fa-thumbs-up"></span>  
-                        <span class= "numberOfLike m-2" style="font-size:15px;"><?php echo $like["numberlike "];?></span>
+                        <span class= "numberOfLike m-2" style="font-size:15px;"><?php //echo $like["numberlike"];?></span>
                     </h5>
                     <h5 id ="comment" class="comment px-3 mt-2 rounded-3 w-auto text-center">
                         <span class="">COMMENT</span> 
