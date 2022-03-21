@@ -12,25 +12,28 @@
 </head>
 <body>
     <div class="navigation w-100 ">
-    <nav class="navbar bg-white d-flex nav">
-        <div class="logo d-flex ml-5">
-            <img src="../images/image 2.png">
-            <form class="form-inline">
-                <input class="form-control ml-2" type="search" placeholder="Search">
-            </form>
-            <div class="icon ml-5 mt-2">
-                <a href="../home_page.php"><li class="fa fa-home"></li></a>
+        <nav class="navbar bg-white d-flex nav">
+            <div class="logo d-flex ml-5">
+                <div class="log_fb">
+                    <img src="../images/image 2.png">
+                </div>
+                <form class="form-inline w-100">
+                    <input class="form-control" type="search" placeholder="Search">
+                    <li class="fa fa-search"></li>
+                </form>
+                <div class="icon ml-5 mt-4">
+                    <a href="../home_page.php"><li class="fa fa-home"></li></a>
+                </div>
             </div>
-        </div>
-        <div class="icon">
-            <a href="../profile.php"><li class="fa fa-user"></li></a>
-        </div>
-        <div class="icon">
-            <a href="../views/add_friends.php"><li class="fas fa-user-friends"></li></a>
-        </div>
-        <div class="login">
-            <a href="../logout.php" class="btn btn-primary mr-5">Logout</a>
-        </div>
-    </nav>
+            <div class="icon mt-1">
+                <a href="../profile.php"><li class="fa fa-user"></li></a>
+            </div>
+            <div class="icon mt-1">
+                <a href="../views/add_friends.php"><li class="fas fa-user-friends"></li></a>
+            </div>
+            <div class="login">
+                <a href="../models/logout.php" class="btn btn-primary mr-5">Logout</a>
+            </div>
+        </nav>
     </div>
         

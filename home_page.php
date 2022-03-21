@@ -4,43 +4,44 @@ require_once ("models/post.php");
 require_once ("models/comment.php");
 // require_once ("models/like.php");
 ?>
-<div class="body-card d-flex justify-content-center">
+<div class="container body-card d-flex justify-content-center">
   <section class="post post-top">
     <form action="/views/post_view.php">
-      <div class="content">
+      <div class="content mt-2">
         <img src="/images/image1.png"class="logo-p">
         <div class="details ml-2">
-          <p>Sopha Rath</p>
-          <div class="privacy ml-3">
+          <p class="mt-3">Sopha Rath</p>
+          <div class="privacy">
             <i class="fas fa-user-friends"></i>
             <span>Friends</span>
-            <i class="fas fa-caret-down"></i>
+            <a href="/views/add_friends.php"><i class="fas fa-caret-down"></i></a>
           </div>
         </div>
+      </div><hr>
+      <div class="btn_post d-flex justify-content-center btn-md-2">
+        <button class="btn btn-outline-primary w-50">Create Post</button>
       </div>
-      <button class="btn btn-primary mt-3">Create Post</button>
     </form>
   </section>
 </div>
-
 <!---------------------------container-------------------------------------->
 <?php 
     $items = getItems();
     foreach($items as $item) : 
 ?>
   <div class="container d-flex justify-content-center">
-      <section class="post mt-5">
+      <section class="post">
           <form action="../controllers/addcomment.php" method="post" enctype="multipart/form-data">
             <input type="hidden" value="<?php echo $item['post_id'];?>" name = "postID">
             <div class="content">
-                   <div class="w-50 d-flex justify-content-start align-items-center">
+                   <div class="d-flex justify-content-start align-items-center">
                         <img src="../images/<?php echo 'image1.png'?>"class="logo-p">
                         <div class="details ml-2">
                             <p class="mt-5"><strong><?php echo "Sopha Rath";?></strong></p>
                             <div class="privacy ml-3">
-                                  <i class="fas fa-user-friends"></i>
-                                  <span>Friends</span>
-                                  <i class="fas fa-caret-down"></i>
+                              <i class="fas fa-user-friends"></i>
+                              <span>Friends</span>
+                              <a href="/views/add_friends.php"><i class="fas fa-caret-down"></i></a>
                             </div>
                         </div>
                    </div>
@@ -51,7 +52,7 @@ require_once ("models/comment.php");
                         <a href="../views/edit_view.php?id=<?php echo $item['post_id'];?>"><i class='fas fa-edit'></i>Edit post</a><br>
                         <a href="controllers/delete_post.php?id=<?php echo $item['post_id'];?>"><i class='far fa-trash-alt'></i>Delete post</a>
                     </div>
-                      <h5 id="update" class="d-flex justify-content-center align-items-center p-4"style="width:30px;height:30px;border-radius:50%;font-size:2.5rem;">...</h5>
+                      <h5 id="update" class="d-flex justify-content-center align-items-center text-align-center p-4 h5"style="width:30px;height:30px;border-radius:50%;font-size:2.5rem;">...</h5>
                   </div>
             </div>
 
@@ -99,7 +100,7 @@ require_once ("models/comment.php");
                 <div class="comment_views mt-2 " id="view_id">
                     <div id ="display-comment" class="icon-delete-comment px-5 border-left-0 border-right-0 w-100">
                         <img class="rounded-circle m-3"src ="../images/<?= $comment['image']?>" alt="">
-                        <div class="comment-face border-2 m-2" style="width:auto;high:auto;">
+                        <div class="comment-face border-2 m-2" style="width:auto;height:auto;">
                             <h6 class="mt-2 ml-2"><strong><?php echo "Veangly Kroh"?></strong></h6>
                             <p class="m-2" ><?php echo $comment["comment_text"];?></p>                    
                         </dive> 

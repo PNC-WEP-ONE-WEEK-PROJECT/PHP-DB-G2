@@ -2,15 +2,14 @@
 <link rel="stylesheet" href="/css/style.css">
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
-        <div class="login-panel panel bg-white p-4 w-100">  
+        <div class="login-panel panel bg-form p-4 w-100">  
             <div class="panel-heading">  
                 <h3 class="d-flex justify-content-center text-primary">Facebook</h3><hr> 
             </div>  
             <div class="panel-body">  
-                <form action="/views/register.php" method="post">  
-                    
+                <form action="/models/post.php" method="post">  
                     <div class="form-group">
-                        <label>First Name</label><br>
+                        <label>Surname</label><br>
                         <input class="form-control" name="firstName" placeholder="Surname" type="text" autofocus required>  
                     </div>  
                     <div class="form-check form-check-inline">
@@ -31,8 +30,8 @@
                     </div>  
                     <div class="form-group">
                         <label>Country</label>
-                        <select class="form-control" name="country" required>
-                            <option selected>Choose...</option>
+                        <select class="form-control p-2 h-50" name="country" required>
+                            <option disabled selected>Choose</option>
                             <option>Cambodia</option>
                             <option>Thailand</option>
                             <option>Japan</option>
@@ -40,15 +39,14 @@
                             <option>Italy</option>
                         </select>
                     </div>  
-                    <div class="form-group"> 
-                        <label for="start">Date of birth:</label>
+                    <div class="form-control d-flex justify-content-between w-100"> 
+                        <label>Date of birth:</label>
                         <input type="date" name="date_of_birth" required>
                     </div>
-                    <input class="btn btn-lg btn-primary btn-block" type="submit" value="Create Account" name="register" > 
-                
+                    <input class="btn btn-lg btn-primary btn-block mt-3" type="submit" value="Create Account" name="register" > 
                 </form> 
-                <div class="form_group d-flex justify-content-center mt-2">
-                    <b>Already registered ?</b><a href="login.php">Login</a>
+                <div class="form_group d-flex justify-content-center mt-3">
+                    <b>Already registered ?</b><a href="login.php" class="ml-2">Login</a>
                 </div>
             </div>  
         </div>  

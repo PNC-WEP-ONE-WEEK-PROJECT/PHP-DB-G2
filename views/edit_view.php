@@ -3,7 +3,7 @@ require_once "../templates/header.php";
 require_once "../models/post.php";
 ?>
 <!-- Edit -->
- <div class="body-card d-flex justify-content-center">
+ <div class="container body-card d-flex justify-content-center">
  <?php
    // Get the id of the item to update in query
    $id = $_GET["id"];
@@ -28,13 +28,15 @@ require_once "../models/post.php";
             <textarea placeholder="What's on your mind...?" spellcheck="false" name="texts" required ><?php echo $item['written_text'];?></textarea>
             <!-- ------Icon Reaction---------------------------------------------> 
             <div class="file_upload editer">;
-                <label for="fill_text" class="fill_text">
-                    <div class="upload edit"><img src="../images/<?php echo $item['image'];?>" alt=""></div><br>
-                    <div class="edit-up"><h4>EDIT PHOTOS</h4></div>
+                <label for="fill_text" class="fill_text text-upload">
+                    <div class="upload edit">
+                        <img src="../images/<?php echo $item['image'];?>">
+                    </div><br>
+                    <div class="edit-up d-flex justify-content-center align-items-center"><h4>EDIT PHOTOS</h4></div>
                 </label>
                 <input type="file" name="uploadfile" id ="fill_text">
             </div>
-            <button type="submit" class="form-control btn-edit" name="submit">Post</button>
+            <button type="submit" class="form-control btn-edit w-100" name="submit">Post</button>
               
         </form>
     </section> 

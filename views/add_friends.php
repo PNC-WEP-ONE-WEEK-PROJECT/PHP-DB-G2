@@ -1,23 +1,44 @@
 <?php
 require_once("../templates/header.php");
+require_once ("../models/post.php");
+
 ?>
-<!-- ---------------------------body-card------------------------------------ -->
-<div class="body-card d-flex justify-content-center">
-  <section class="post post-top">
-    <form action="../controllers/create_profile.php" method="post" enctype="multipart/form-data">
-      <div class="d-flex justify-content-between">
-        <h2 class="h2">Add Friends</h2>
-        <a href="../profile.php"><li class="fa fa-remove icon mt-2"></li></a>
-      </div><hr>
-      <div class="contents d-flex justify-content-center mt-4" >
-        <label for="fill_text" class="fill_text">
-          <div class="upload d-flex justify-content-center"><img src="../images/user.png" class="logo_account"></div><br>
-          <li class="fa fa-camera"></li>
-        </label>
-        <input type="file" name="file_name" id="fill_text">
+<div class="container body-card d-flex justify-content-center top_card">
+  <section class="post mt-2">
+    <form action="">
+      <div class="content mt-4">
+        <img src="/images/image1.png"class="logo_friends">
+        <p class="mt-4 ml-3">Sopha Rath</p>
+        <div class="btn_add">
+          <button class="btn btn-primary w-100">Add Friends</button>
+        </div>
       </div>
-      <textarea class="text_area" placeholder="User Name :" spellcheck="false" name="user_name" required></textarea>
-      <button type="submit" class="form-control" name="submit">ADD+</button>
+    </form>
+  </section>
+</div>
+<div class="container body-card d-flex justify-content-center">
+  <section class="post mt-2">
+    <form action="">
+      <div class="content mt-4">
+        <img src="/images/image1.png"class="logo_friends">
+        <p class="mt-4 ml-3">Sopha Rath</p>
+        <div class="btn_add">
+          <button class="btn btn-primary w-100">Add Friends</button>
+        </div>
+      </div>
+    </form>
+  </section>
+</div>
+<div class="container body-card d-flex justify-content-center">
+  <section class="post mt-2">
+    <form action="">
+      <div class="content mt-4">
+        <img src="/images/image1.png"class="logo_friends">
+        <p class="mt-4 ml-3">Sopha Rath</p>
+        <div class="btn_add">
+          <button class="btn btn-primary w-100">Add Friends</button>
+        </div>
+      </div>
     </form>
   </section>
 </div>

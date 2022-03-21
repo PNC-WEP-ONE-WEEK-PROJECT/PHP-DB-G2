@@ -71,69 +71,106 @@ function updatText($id,$written_text)
 }
 
 
+// Form log-----------------------------------------
+if(isset($_POST['login']))  
+{  
+    $email_address=$_POST['email'];  
+    $password=$_POST['pass'];  
+  
+    $check_user="select * from user_profiles WHERE email_address='$email_address'AND password='$password'";  
+  
+    $run=mysqli_query($dbcon,$check_user);  
+  
+    if(mysqli_num_rows($run))  
+    {  
+        require_once ("../home_page.php") ;
+  
+        $_SESSION['email']=$email_address;//here session is used and value of $user_email store in $_SESSION. 
+    }  
+    else  
+    {  
+      require_once ("../login.php");
+      header("Refresh:1.2; ../login.php");
+    }  
+}  
 
+// Register---------------------------
+if(isset($_POST['register']))  
+{  
+    $surname=$_POST['firstName'];
+    $gender=$_POST['gender'];
+    $email_address=$_POST['email'];
+    $password=$_POST['pass'];
+    $country=$_POST['country'];
+    $date_of_birth=$_POST['date_of_birth'];
 
+    if($surname=='')  
+    {  
+        echo"<script>alert('Please enter the name')</script>";  
+    //this use if first is not work then other will not show  
+    }  
+  
+    if($email_address=='')  
+    {  
+        echo"<script>alert('Please enter the password')</script>";  
+    }  
+  
+    if($password=='')  
+    {  
+        echo"<script>alert('Please enter the email')</script>";  
+    }  
+    //here query check weather if user already registered so can't register again.  
+    $check_email_query="select * from user_profiles WHERE email_address='$email_address'";  
+    $run_query=mysqli_query($dbcon, $check_email_query);  
+  
+    if(mysqli_num_rows($run_query)>0)  
+    {  
+    echo "<script>alert('Email $email_address is already exist in our database, Please try another one!')</script>";  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }  
+    //insert the user into the database.  
+    $insert_user="insert into user_profiles (surname, gender, email_address, password, country, date_of_birth) VALUES ('$surname','$gender','$email_address','$password', '$country', '$date_of_birth')";  
+    if(mysqli_query($dbcon, $insert_user))  
+    {  
+        require_once("../login.php");
+    }  
+}
 
 
 // ----------------------------Post Profile---------------------------------
 function get_user()
 {
     global $db;
-    $statement = $db->query("SELECT user_id, surname, file_image FROM user_profiles") ;
+    $statement = $db->query("SELECT id, user_id, file_image FROM friends") ;
     $users = $statement->fetchAll();
     return $users;
 
 }
 
-function createFriends($surname, $file_image)
-{   
-    $target = "../images/upload_profile/" .$_FILES['file_name']['name'];
-    move_uploaded_file($_FILES['file_name']['tmp_name'],$target);
+function createFriends($id, $user_id)
+{  
     global $db;
-    $statement = $db->prepare("INSERT INTO user_profiles (surname, file_image) VALUES(:surname, :file_image);");
+    $statement = $db->prepare("INSERT INTO friends (id, user_id) VALUES(:id, :file_user_id);");
     $statement->execute([
-        ':surname'=>$surname,
-        ':file_image' =>$file_image,
+        ':id'=>$id,
+        ':user_id' =>$user_id,
     ]);
     return ($statement->rowCount() == 1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

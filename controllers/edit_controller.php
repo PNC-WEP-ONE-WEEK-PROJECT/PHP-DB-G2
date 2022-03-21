@@ -11,4 +11,4 @@ if(!empty($_FILES["uploadfile"]["name"])){
 }else{
     updatText($id,$written_text);
 }
-header('location: ../views/post_view.php');
+header('location: ../home_page.php');
