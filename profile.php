@@ -11,7 +11,7 @@ require_once ("models/post.php");
             <div class="upload d-flex justify-content-center"><img src="/images/rady.jpg"class="logo_account"></div><br>
             <li class="fa fa-camera"></li>
           </label>
-          <p>Sopha Rath</p>
+          <p><?php echo "Sopha Rath"?></p>
         </div>
     </form>
   </section>

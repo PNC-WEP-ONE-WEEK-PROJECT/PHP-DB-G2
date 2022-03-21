@@ -179,7 +179,6 @@ input[type="file"]{
   background-color: #ffff;
 }
 label{
-
   font-weight: bold;
 }
 .upload {
@@ -206,32 +205,22 @@ label{
   margin-left: 11rem;
   font-size: 1.5rem;
 }
-
-
 /* Update the post------------------------------ */
-.for-delete{
-  width: 100%;
-  position:absolute;
-  left: 699px;
+.form-d{
+  display: none;
 }
 
-.for-delete label{
-  font-size: 3rem;
-  position: absolute;
- left:400px;
- top: -70px;
+.for-delete h5:hover {
+  background: #f5f3f3;
 }
 
-.for-delete label:valid{
-  display: block;
-}
 #form-d{
   width: 16%;
   padding: 20px;
   background: #ececec;
   z-index: 888;
   position: absolute;
-  left: 90px;
+  left:800px;
   border-radius: 15px;
   opacity: 0.6;
 }
@@ -246,6 +235,7 @@ label{
   margin:10px;
   position: sticky;
 }
+
 /* Edit the post---------------- --------*/
 .edit img{
   width:600px;
@@ -282,7 +272,82 @@ label{
 .edit-up h4{
   font-weight: bold;
 }
+/*  ..Comment-----------------------------------------*/ 
+.icons_reach {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #B9B9B9;
+  width: 100%;
+  font-size: 50px;
+}
+.icons_reach h5{
+  border-radius: 8px;
+}
+.icons_reach h5:hover{
+  background: #e5e7e7;
+  border-radius: 8px;
+}
+.view_comments:hover{
+  background: #faf9f9;
+  border-radius: 10px;
 
+}
+
+/* --Add comment---------------------- */
+#write-comment{
+  display: none;
+}   
+
+#write-comment img, #update_comment img{
+  width: 60px;
+  height: 60px;
+}
+#write-comment .controller, #update_comment .controller{
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  background: #cacaca;
+}
+
+/* --Comment view---------------------- */
+.comment_views{
+  display: none;
+  cursor: pointer;
+}  
+
+.icon-delete-comment{
+  display: flex;
+  justify-content: start;
+}
+.icon-delete-comment img{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+}
+.icon-delete-comment .comment-face:hover{
+  background: #dfdede;
+}
+.comment-face{
+  border-radius: 14px;
+  background: rgb(241, 241, 240);
+}    
+
+/* Delete comment ------ */
+.getDelete{
+  background-color: #ccc9c9;
+}
+.dl-comment{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(255, 254, 254);
+}
+.dl-comment:hover{
+  background: rgb(241, 240, 240);
+}
 
 
 
