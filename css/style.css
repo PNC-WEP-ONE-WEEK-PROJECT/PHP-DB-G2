@@ -246,6 +246,13 @@ label{
 .h5 {
   margin-right: -6rem;
   margin-top: -3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i:hover {
+  color: #4599FF;
 }
 .edit-up{
   width: 15%;
