@@ -10,13 +10,11 @@
   z-index: 10;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
 .navigation {
   position: fixed;
   z-index: 30;
   top:  0;
-}
-.post {
-  margin-right: 1rem;
 }
 .h2 {
   display: flex;
@@ -32,7 +30,11 @@ a,.fa-ellipsis-h {
   font-size: 30px;
 }
 .fa-home, .fa-user-friends, .fa-user {
-  color: #000;
+  color: rgb(112, 111, 111);
+}
+a:active {
+ border-bottom: #1a81ff 5px solid;
+
 }
 .form-inline input {
     border-radius: 2rem;
@@ -139,9 +141,12 @@ form textarea:valid ~ button:hover{
   margin-top: 1rem;
   width: 100%;
 }
+.post {
+  margin-right: -2rem;
+}
 .container .post {
   margin-bottom: 8px;
-  width: 60%;
+  width: 55%;
 }
 .post-top {
   margin-top: 6rem;
@@ -233,7 +238,7 @@ label{
 
 /* Edit the post---------------- --------*/
 .edit img{
-  width:600px;
+  width:550px;
   height: 400px;
   opacity: 0.6;
 }
@@ -244,8 +249,8 @@ label{
   top: 0;
 }
 .h5 {
-  margin-right: -6rem;
-  margin-top: -3rem;
+  margin-right: -5rem;
+  margin-top: -4rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -291,9 +296,10 @@ i:hover {
 .view_comments:hover{
   background: #faf9f9;
   border-radius: 10px;
-
 }
-
+span {
+  cursor: pointer;
+}
 /* --Add comment---------------------- */
 #write-comment{
   display: none;
@@ -315,6 +321,9 @@ i:hover {
   display: none;
   cursor: pointer;
 }  
+.text-primary {
+  cursor: pointer;
+}
 
 .icon-delete-comment{
   display: flex;
@@ -374,40 +383,6 @@ a .fa-remove:hover {
   text-decoration: none;
   color: red;
 }
-
-/* ------------------form login------------------------------ */
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-.bg-white {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
-}
-.gender {
-  display: flex;
-}
-
-.log_fb img {
-  width: 80px;
-}
-.fa-search {
-  position: absolute;
-  z-index: 2;
-  margin-left: 12rem;
-  color: #BCC0C4;
-}
-input[type='search'] {
-  position: relative;
-}
-.navigation {
-  position: fixed;
-  z-index: 10;
-}
-
-
 /* new css--------------------- */
 .content .details .privacy{
   display: flex;
@@ -446,12 +421,13 @@ input[type='search'] {
   background: #e0e0e0;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 10px;
+  padding: 10px 30px 15px;
 }
 .logo_facebook {
   width: 80px;
 }
 .form-control{
-  padding: 0.8rem;
+  padding: 0.7rem;
 }
 input[type='radio'] {
   height: 18px;
@@ -472,6 +448,18 @@ h1 {
   width: 100%;
   height: 49px;
 }
+.log_fb img {
+  width: 80px;
+}
+.fa-search {
+  position: absolute;
+  z-index: 2;
+  margin-left: 12rem;
+  color: #BCC0C4;
+}
+input[type='search'] {
+  position: relative;
+}
 
 /* --------------------add Friends-------------------------- */
 .btn_add {
@@ -479,7 +467,7 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   margin: 0 auto;
-  margin-left: 18rem;
+  margin-left: 15rem;
 }
 
 .logo_friends {

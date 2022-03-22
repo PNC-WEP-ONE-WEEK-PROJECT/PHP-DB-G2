@@ -20,6 +20,10 @@ require_once ("models/post.php");
   <section class="post">
     <form action="/controllers/create_profile.php" method="post" enctype="multipart/form-data">
       <h3 class="mt-3">List all of Friends</h3>
+      <div class="content mt-4">
+        <img src="/images/image1.png"class="logo_friends">
+        <p class="mt-4 ml-3">Sopha Rath</p>
+      </div>
     </form>
   </section>
 </div>

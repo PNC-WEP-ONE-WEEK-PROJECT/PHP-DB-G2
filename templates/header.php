@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="navigation w-100 ">
+    <div class="navigation w-100 active">
         <nav class="navbar bg-white d-flex nav">
             <div class="logo d-flex ml-5">
                 <div class="log_fb">

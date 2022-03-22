@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="/css/style.css">
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
-        <div class="login-panel panel bg-form p-4 w-100">  
+        <div class="login-panel panel bg-form w-100">  
             <div class="panel-heading">  
                 <h3 class="d-flex justify-content-center text-primary">Facebook</h3><hr> 
             </div>  
@@ -21,7 +21,7 @@
                         <label class="form-check-label">Female</label>
                     </div>
                     <div class="form-group ">  
-                        <label for="Email Address"></label>
+                        <label>Email Address</label>
                         <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus required>  
                     </div>  
                     <div class="form-group">  
@@ -45,7 +45,7 @@
                     </div>
                     <input class="btn btn-lg btn-primary btn-block mt-3" type="submit" value="Create Account" name="register" > 
                 </form> 
-                <div class="form_group d-flex justify-content-center mt-3">
+                <div class="form_group d-flex justify-content-center mt-2">
                     <b>Already registered ?</b><a href="login.php" class="ml-2">Login</a>
                 </div>
             </div>  

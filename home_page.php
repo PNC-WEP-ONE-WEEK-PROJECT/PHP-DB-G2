@@ -35,7 +35,7 @@ require_once ("models/comment.php");
             <input type="hidden" value="<?php echo $item['post_id'];?>" name = "postID">
             <div class="content">
                    <div class="d-flex justify-content-start align-items-center">
-                        <img src="../images/<?php echo 'image1.png'?>"class="logo-p">
+                        <img src="../images/<?=$item['image'];?>"class="logo-p">
                         <div class="details ml-2">
                             <p class="mt-5"><strong><?php echo "Sopha Rath";?></strong></p>
                             <div class="privacy ml-3">

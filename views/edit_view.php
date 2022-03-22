@@ -27,7 +27,7 @@ require_once "../models/post.php";
             <!-- Text area--------------- -->
             <textarea placeholder="What's on your mind...?" spellcheck="false" name="texts" required ><?php echo $item['written_text'];?></textarea>
             <!-- ------Icon Reaction---------------------------------------------> 
-            <div class="file_upload editer">;
+            <div class="file_upload editer">
                 <label for="fill_text" class="fill_text text-upload">
                     <div class="upload edit">
                         <img src="../images/<?php echo $item['image'];?>">
