@@ -125,8 +125,8 @@ if(isset($_POST['register']))
   
     if(mysqli_num_rows($run_query)>0)  
     {  
-    echo "<script>alert('Email $email_address is already exist in our database, Please try another one!')</script>";  
-
+        echo "<script>alert('Email $email_address is already exist in our database, Please try another one!')</script>";  
+        exit();
     }  
     //insert the user into the database.  
     $insert_user="insert into user_profiles (surname, gender, email_address, password, country, date_of_birth) VALUES ('$surname','$gender','$email_address','$password', '$country', '$date_of_birth')";  
